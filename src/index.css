@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #C2CAD0;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  overflow-x: hidden;
+}
+.brbr
+{
+  background-color: #1F2833;
+  height: 1px;
+}
+.secondFontColor
+{
+  color: #17a2b8 ;
+}
+.space
+{
+  line-height: 37px;
+}
+.brRadius
+{
+  border: #17a2b8 2px solid;
+  border-radius: 10% 25%   ;
+  transition: all 1s;
+  overflow: hidden;
+}
+.brRadius:hover {
+  transform: scale(1.07);
+}
+/* ----------------------looading ----------------------*/
+.loader,
+.loader:before,
+.loader:after {
+  background: #17a2b8;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #17a2b8;
+  text-indent: -9999em;
+  margin: 300px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+.load{
+  width: 100%;
+  height: 100vh;
+  background-color: #C2CAD0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999999;
+  display: flex;
+}
+/* ----------------------looading ----------------------*/
+
+/* ----------------------carousal ----------------------*/
+
+.brRadius1
+{
+  border-radius: 10%;
+  border: #17a2b8 4px  solid;
+}
+.carousel-indicators li {
+  background-color: #17a2b8;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2317a2b8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2317a2b8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+/* ----------------------carousal ----------------------*/
+/*--------------------------- icon ---------------------- */
+
+.icon{
+  transition: all 1s;
+}
+.icon:hover{
+  color: #154360 !important;
+}
+/*--------------------------- icon ---------------------- */
